@@ -14,6 +14,10 @@ let aa=parseFloat(a.value);
 let bb=parseFloat(b.value);
 let cc=parseFloat(c.value);
 let data=(bb*bb)-(4*aa*cc);
+if(data<0){
+alert("ដោយសារDeta តូចជាងសូន្យគឺសមីការគ្មានឫសទេរឺមានឫសជាចំនួនកំផ្លិច....");
+}
+else{
 let y1=(-bb+Math.sqrt(data))/(2*aa);
 let y2=(-bb-(Math.sqrt(data)))/(2*aa);
 x1.value=y1.toFixed(2);
@@ -29,5 +33,6 @@ if(b.value.length==0){
 }
 if(c.value.length==0){
   window.alert("សូមបញ្ចូលតម្លៃ C...");
+}
 }
 }
